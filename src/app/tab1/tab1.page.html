@@ -1,17 +1,58 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="" [fullscreen]="true">
+  <div class="background">
+    <ion-grid fixed>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="12">
+          <ion-card style="border-radius:30px">
+            <ion-item class="ion-text-center">
+              <ion-label>QR & Barcode Scanner</ion-label>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6" class="ion-text-center">
+          <ion-card button (click)="goQRorBarCode('Scan Your QR Code')">
+            <ion-icon style="color: black;font-size: 80px;padding-top: 16px;" name="qr-code-outline"></ion-icon>
+            <ion-item class="ion-text-center">
+              <ion-label>QR Code</ion-label>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6" class="ion-text-center">
+          <ion-card button (click)="goQRorBarCode('Scan Your Barcode')">
+            <ion-icon style="color: black;font-size: 80px;padding-top: 16px;" name="barcode-outline"></ion-icon>
+            <ion-item class="ion-text-center">
+              <ion-label>Barcode</ion-label>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6" class="ion-text-center">
+          <ion-card button (click)="gs.appShare()">
+            <ion-icon style="color: black;font-size: 40px;padding-top: 16px;" name="share-social-outline"></ion-icon>
+            <ion-item class="ion-text-center">
+              <ion-label>Share App</ion-label>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6" class="ion-text-center">
+          <ion-card button (click)="gs.rateApp()">
+            <ion-icon style="color: black;font-size: 40px;padding-top: 16px;" name="star-outline"></ion-icon>
+            <ion-item class="ion-text-center">
+              <ion-label>Rate App</ion-label>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6" class="ion-text-center">
+          <ion-card button (click)="history()">
+            <ion-icon style="color: black;font-size: 40px;padding-top: 16px;" name="time-outline"></ion-icon>
+            <ion-item class="ion-text-center">
+              <ion-label>History</ion-label>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <!-- <div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  </div> -->
 </ion-content>

@@ -1,0 +1,20 @@
+.background {
+    // padding: 283px 0 187px;
+    // background-image: url(../assets/bc-profile.jpg)100%;
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-position: bottom;
+
+    background-image: url('/assets/bc-profile.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-position: right;
+    // height: 200px;
+
+}
+
+ion-card{
+    border-radius: 16px;
+}
